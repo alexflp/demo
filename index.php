@@ -17,9 +17,8 @@
 			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			    <div class="navbar-nav">
 			      <a class="nav-item nav-link active" href="http://www.alphapay.ca">Home <span class="sr-only">(current)</span></a>
-			     <!--  <a class="nav-item nav-link" href="#">Features</a>
-			      <a class="nav-item nav-link" href="#">Pricing</a>
-			      <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+			     	<a class="nav-item nav-link" href="index.php">Demo</a>
+			    
 			    </div>
 			  </div>
 			</nav>	
@@ -34,6 +33,10 @@
 					<div class="rowp">
 						<p>Using Wechat Pay for Online Shopping, costumer can easily finish payment by scanning QR code.</p>
 					</div>
+					<div class="showimg">
+						<img src="img/w2.jpg">
+					</div>
+					<br>
 					<a id="leavebt" class="btn" href="/phpcartdemo">Learn More</a>
 				</div>
 
@@ -44,6 +47,10 @@
 					<div class="rowp">
 						<p>AlphaPay provide different payment methods for costomers and vendors.</p>
 					</div>
+					<div class="showimg">
+						<img src="img/w1.jpg">
+					</div>
+					<br>
 					<a id="leavebt" class="btn" href="/phpdemo/common">Learn More</a>
 				</div>
 
