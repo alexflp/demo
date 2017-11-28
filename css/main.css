@@ -1,0 +1,93 @@
+html{
+  height: 100%;
+}
+body{
+  min-height: 100vh;
+}
+
+.sample{
+  
+  width: 80%;
+  margin-left: 10%;
+  height: 70vh;
+ 
+  padding-top: 20px;
+}
+
+.sample h1,h3{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.ion-ios-browsers-outline{
+  font-size: 30px;
+}
+
+.ion-ios-cart-outline{
+  font-size: 30px;
+}
+
+.rowp{
+  height: 80px;
+}
+
+.enfooter{
+  width: 100%;
+  background-color: black;
+  color:white;
+  text-align: center;
+  height: 200px;
+}
+
+.infooter{
+  width: 80%;
+  height: inherit;
+  margin-left:10%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+
+
+.message{
+  padding-top: 70px;
+  padding-bottom: 20px;
+  height: auto;
+  background-color: #e6e9ef;
+  text-align: center;
+
+}
+
+.message h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+#leavebt{
+  width: 150px;
+  background-color: black;
+  color:white;
+  border: solid;
+  border-color: black;
+
+}
+
+#leavebt:hover{
+  
+  color:black;
+  background-color: white;
+}
+
+#messmail{
+  margin-left: 20%;
+  width: 60%;
+
+}
+
+.reply{
+  text-align: center;
+  font-size: 45px;
+  height: 80vh;
+}
