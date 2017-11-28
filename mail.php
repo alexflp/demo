@@ -11,14 +11,14 @@ $mail = new PHPMailer(true);
 
 		// $mail->SMTPDebug = 2;                                
 		$mail->isSMTP();                                     
-		$mail->Host = 'smtp.gmail.com';  
+		$mail->Host = 'smtp.live.com';  
 		$mail->SMTPAuth = true;                              
-		$mail->Username = 'alphacustomer11@gmail.com';                
+		$mail->Username = 'alphapaymeassage@outlook.com';                
 		$mail->Password = 'flash123';                          
-		$mail->SMTPSecure = 'ssl';                            
-		$mail->Port = 465;
+		$mail->SMTPSecure = 'tls';                            
+		$mail->Port = 587;
 						
-		$mail->setFrom('alphacustomer11@gmail.com', 'Mailer');
+		$mail->setFrom('alphapaymeassage@outlook.com', 'Mailer');
 		$mail->addAddress('it@alphapay.ca'); 
 
 		// $mail->isHTML(true);                                 
