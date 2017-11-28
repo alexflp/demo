@@ -1,3 +1,36 @@
+<?php 
+//Load composer's autoloader
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+
+		// $mail->SMTPDebug = 2;                                
+		$mail->isSMTP();                                     
+		$mail->Host = 'smtp.gmail.com';  
+		$mail->SMTPAuth = true;                              
+		$mail->Username = 'alphacustomer11@gmail.com';                
+		$mail->Password = 'flash123';                          
+		$mail->SMTPSecure = 'ssl';                            
+		$mail->Port = 465;
+						
+		$mail->setFrom('alphacustomer11@gmail.com', 'Mailer');
+		$mail->addAddress('it@alphapay.ca'); 
+
+		// $mail->isHTML(true);                                 
+    $mail->Subject = 'Message';
+    $mail->Body    = $_POST['cname']." ".$_POST['cwebsite']." ".$_POST['name']." ".$_POST['title']." ".$_POST['phone']." ".$_POST['email'];
+	//	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+		$mail->send();
+      
+
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -15,10 +48,9 @@
 			
 			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			    <div class="navbar-nav">
-			      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-			      <a class="nav-item nav-link" href="#">Features</a>
-			      <a class="nav-item nav-link" href="#">Pricing</a>
-			      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+			      <a class="nav-item nav-link" href="http://alphapay.ca">Home</a>
+			      <a class="nav-item nav-link" href="index.php">Demo</a>
+			      
 			    </div>
 			  </div>
 			</nav>	
@@ -26,16 +58,6 @@
 		<div class="reply">
 			Hello,<?php echo $_POST['name'];?>. We will contact you soon.<br>
 		</div>
-        <?php
-		$to      = 'it@alphapay.ca';
-		$subject = 'Leave message';
-		$message = $_POST['name'];
-		$headers = 'From: it@alphapay.ca';
-		
-
-		mail($to, $subject, $message, $headers);
-		?> 
-
 
 	    <footer class="enfooter">
 	        <div class = "infooter">

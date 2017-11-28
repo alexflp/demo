@@ -6,14 +6,17 @@ body{
 }
 
 .sample{
-  
+  padding-top:30px;
+  padding-bottom: 30px;
   width: 80%;
   margin-left: 10%;
   height: 70vh;
- 
-  padding-top: 20px;
+  margin-bottom: 10%;
 }
 
+.sample.row{
+  padding-bottom: 60px;
+}
 .sample h1,h3{
   padding-top: 30px;
   text-align: center;
@@ -88,6 +91,7 @@ body{
 
 .reply{
   text-align: center;
-  font-size: 45px;
-  height: 40vh;
+  font-size: 40px;
+  margin-top: 30vh;
+  height: 45vh;
 }
